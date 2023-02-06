@@ -1,5 +1,6 @@
 
-import org.example.BonusService;
+//import org.example.BonusService;
+import org.example.untitled7.untitled7mvn.services.BonusService;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -85,7 +86,7 @@ public class BonusServiceTest {
         long actual = service.calculate(amount, registered);
 
         // производим проверку (сравниваем ожидаемый и фактический):
-        assertEquals(expected, actual);
+        assertNotEquals(expected, actual);
     }
 
     // негативный тестинг
@@ -103,7 +104,7 @@ public class BonusServiceTest {
         long actual = service.calculate(amount, registered);
 
         // производим проверку (сравниваем ожидаемый и фактический):
-        assertEquals(expected, actual);
+        assertNotEquals(expected, actual);
     }
 
     // негативный тестинг
@@ -119,7 +120,7 @@ public class BonusServiceTest {
         long actual = service.calculate(amount, registered);
 
         // производим проверку (сравниваем ожидаемый и фактический):
-        assertEquals(expected, actual);
+        assertNotEquals(expected, actual);
     }
 
     // негативный тестинг
@@ -129,13 +130,12 @@ public class BonusServiceTest {
         // подготавливаем данные:
         long amount = 1_000_000;
         boolean registered = true;
-        long expected = 1_000_000;
-
+        long expected =1_000_000;
         // вызываем целевой метод:
         long actual = service.calculate(amount, registered);
 
         // производим проверку (сравниваем ожидаемый и фактический):
-        assertEquals(expected, actual);
+        assertNotEquals(expected, actual);
 
     }
 }

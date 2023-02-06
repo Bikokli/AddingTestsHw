@@ -1,4 +1,4 @@
-package org.example;
+package org.example.untitled7.untitled7mvn.services;
 
 public class BonusService {
 
